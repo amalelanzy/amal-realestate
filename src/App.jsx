@@ -118,6 +118,8 @@ const App = () => {
   const content = {
     en: {
       location: "Riyadh, Saudi Arabia",
+      brand: "Amal",
+      brandSub: "Al-Enezi",
       nav: [
         { name: 'Services', target: 'Services' },
         { name: 'Compliance', target: 'Compliance' },
@@ -173,6 +175,8 @@ const App = () => {
     },
     ar: {
       location: "الرياض، المملكة العربية السعودية",
+      brand: "أمل ",
+      brandSub: "العنزي",
       nav: [
         { name: 'خدماتنا', target: 'Services' },
         { name: 'الأنظمة', target: 'Compliance' },
@@ -268,7 +272,7 @@ const App = () => {
             <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <div className="w-8 h-8 bg-[#C5A059] rounded flex items-center justify-center text-white font-bold shadow-lg text-sm md:text-base">A</div>
               <span className={`text-lg md:text-xl font-bold tracking-tight uppercase ${lang === 'ar' ? 'mr-2' : 'ml-1'}`}>
-                Amal<span className="text-[#C5A059] italic">RealEstate</span>
+                {t.brand}<span className="text-[#C5A059] italic">{t.brandSub}</span>
               </span>
             </div>
             
