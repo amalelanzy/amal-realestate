@@ -175,8 +175,8 @@ const App = () => {
     },
     ar: {
       location: "الرياض، المملكة العربية السعودية",
-      brand: "أمل ",
-      brandSub: "للعقارات",
+      brand: "Amal",
+      brandSub: "RealEstate",
       nav: [
         { name: 'خدماتنا', target: 'Services' },
         { name: 'الأنظمة', target: 'Compliance' },
