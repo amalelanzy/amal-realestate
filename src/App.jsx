@@ -119,7 +119,7 @@ const App = () => {
     en: {
       location: "Riyadh, Saudi Arabia",
       brand: "Amal",
-      brandSub: "Al-Enezi",
+      brandSub: "RealEstate",
       nav: [
         { name: 'Services', target: 'Services' },
         { name: 'Compliance', target: 'Compliance' },
@@ -176,7 +176,7 @@ const App = () => {
     ar: {
       location: "الرياض، المملكة العربية السعودية",
       brand: "أمل ",
-      brandSub: "العنزي",
+      brandSub: "للعقارات",
       nav: [
         { name: 'خدماتنا', target: 'Services' },
         { name: 'الأنظمة', target: 'Compliance' },
@@ -211,7 +211,7 @@ const App = () => {
         ]
       },
       identity: {
-        title: "أمل - وسيطة عقارية معتمدة",
+        title: "أمل العنزي - وسيط عقاري معتمد",
         brokerTag: "ترخيص هيئة العقار رقم 1100280825",
         mission: "مهمتي هي البحث لكم عن العميل الأنسب والتسويق للعقار بأفضل الطرق الحديثة، عبر إعلانات احترافية في برامج التواصل الاجتماعي."
       },
