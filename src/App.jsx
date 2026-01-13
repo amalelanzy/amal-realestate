@@ -126,7 +126,7 @@ const App = () => {
         { name: 'Vision', target: 'Vision' },
         { name: 'Contact', target: 'Connect' }
       ],
-      heroTag: "Certified Real Estate Broker • REGA Approved",
+      heroTag: "Certifie Real Estate Broker • REGA Approved",
       heroTitle: "Premium Property Investment in Riyadh",
       heroSubtitle: "Strategic advisory for global investors. We specialize in luxury villas, commercial assets, and prime land across the Riyadh region under Saudi law.",
       ctaPrimary: "Explore Listings",
