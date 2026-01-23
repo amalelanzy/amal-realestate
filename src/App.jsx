@@ -51,7 +51,21 @@ const DarkSectionDecor = () => {
       sway: Math.random() * 30 - 15
     }))
   );
-
+const gtag_report_conversion = (url) => {
+  if (typeof window.gtag !== 'undefined') {
+    window.gtag('event', 'conversion', {
+      'send_to': 'AW-10782053895/CaxsCOyUrOEbEIespJUo',
+      'value': 1.0,
+      'currency': 'SAR',
+      'event_callback': () => {
+        if (typeof url !== 'undefined') {
+          window.location = url;
+        }
+      }
+    });
+  }
+  return false;
+};
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
       {particles.map((p) => (
@@ -243,6 +257,7 @@ const App = () => {
       {/* Floating WhatsApp Button */}
       <motion.a 
         href={whatsappUrl}
+        onClick={() => gtag_report_conversion(whatsappUrl)}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
@@ -499,6 +514,7 @@ const App = () => {
                   <motion.a 
                     whileHover={{ scale: 1.03 }} 
                     href={whatsappUrl} 
+                    onClick={() => gtag_report_conversion(whatsappUrl)}
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="w-full py-4 md:py-5 bg-[#25D366] text-white rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-[#1ebc56] transition-all uppercase text-sm md:text-base tracking-widest shadow-xl shadow-green-500/10 text-center"
@@ -508,6 +524,7 @@ const App = () => {
                   <motion.a 
                     whileHover={{ scale: 1.03 }} 
                     href={`tel:${phoneNum}`} 
+                    onClick={() => gtag_report_conversion(`tel:${phoneNum}`)}
                     className="w-full py-4 md:py-5 bg-[#C5A059] text-white rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-[#B8860B] transition-all uppercase text-sm md:text-base tracking-widest shadow-xl shadow-[#C5A059]/10 text-center"
                   >
                     <Phone size={24} /> <span>{t.contactSection.callBtn}</span>
