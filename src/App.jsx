@@ -51,7 +51,7 @@ const DarkSectionDecor = () => {
       sway: Math.random() * 30 - 15
     }))
   );
-const gtag_report_conversion = (url) => {
+window.gtag_report_conversion = (url) => {
   if (typeof window.gtag !== 'undefined') {
     window.gtag('event', 'conversion', {
       'send_to': 'AW-10782053895/CaxsCOyUrOEbEIespJUo',
